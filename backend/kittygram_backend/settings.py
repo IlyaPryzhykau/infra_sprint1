@@ -6,6 +6,9 @@ env = Config(RepositoryEnv('.env'))
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+env_path = BASE_DIR / '.env'
+env = Config(RepositoryEnv(env_path))
+
 SECRET_KEY = env('SECRET_KEY')
 
 DEBUG = False
