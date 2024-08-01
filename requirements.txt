@@ -12,6 +12,7 @@ django-templated-mail==1.1.1
 djangorestframework==3.12.4
 djangorestframework-simplejwt==4.8.0
 djoser==2.1.0
+gunicorn==22.0.0
 idna==3.7
 iniconfig==2.0.0
 itypes==1.2.0
@@ -28,6 +29,7 @@ pytest==6.2.4
 pytest-django==4.4.0
 pytest-pythonpath==0.7.3
 python-decouple==3.8
+python-dotenv==1.0.1
 python3-openid==3.2.0
 pytz==2024.1
 requests==2.32.3
@@ -41,4 +43,3 @@ typing_extensions==4.12.2
 uritemplate==4.1.1
 urllib3==2.2.2
 webcolors==1.11.1
-python-decouple
