@@ -1,0 +1,6 @@
+IP: 89.169.169.14;
+name_taski: (https://richi-host.zapto.org/);
+name_kittygram: (https://richi-test.zapto.org/api/);
+login: richi;
+password: richi;
+
