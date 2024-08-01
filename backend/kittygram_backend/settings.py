@@ -1,15 +1,12 @@
-from decouple import Config, RepositoryEnv
+from dotenv import load_dotenv
 import os
 from pathlib import Path
 
-env = Config(RepositoryEnv('.env'))
+load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-env_path = BASE_DIR / '.env'
-env = Config(RepositoryEnv(env_path))
-
-SECRET_KEY = env('SECRET_KEY', default='django-insecure-cg6*%6d51ef8f#4!r3*$vmxm4)abgjw8mo!4y-q*uq1!4$-89$')
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 DEBUG = False
 
